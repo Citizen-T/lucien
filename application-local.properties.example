@@ -1,0 +1,6 @@
+# Copy this file to application-local.properties and add your actual API key
+# This file is gitignored to keep your secrets safe
+
+# OpenAI API Configuration
+# Get your API key from: https://platform.openai.com/api-keys
+spring.ai.openai.api-key=sk-your-actual-openai-api-key-here
