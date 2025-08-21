@@ -10,7 +10,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest(HelloController.class)
 class HelloControllerTest {
-
     @Autowired
     private MockMvc mockMvc;
 
