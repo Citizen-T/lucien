@@ -23,11 +23,14 @@ Lucien AI is a Spring Boot application that leverages OpenAI's API to provide in
 2. **Configure your OpenAI API key**
    - Copy the example configuration file:
      ```bash
-     cp application-local.properties.example application-local.properties
+     cp application-local.yml.example application-local.yml
      ```
-   - Edit `application-local.properties` and add your OpenAI API key:
-     ```properties
-     spring.ai.openai.api-key=sk-your-actual-openai-api-key-here
+   - Edit `application-local.yml` and add your OpenAI API key:
+     ```yaml
+     spring:
+       ai:
+         openai:
+           api-key: sk-your-actual-openai-api-key-here
      ```
    - Get your API key from: https://platform.openai.com/api-keys
 
@@ -62,8 +65,8 @@ The project uses Spring Boot 3.5.4 and Spring AI 1.0.1.
 
 The application uses Spring Boot's configuration system. Key configuration files:
 
-- `src/main/resources/application.properties` - Main application configuration
-- `application-local.properties` - Local development configuration (not tracked in git)
+- `src/main/resources/application.yml` - Main application configuration
+- `application-local.yml` - Local development configuration (not tracked in git)
 
 ### Environment Variables
 
