@@ -51,6 +51,12 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!-- Fix Maven dependency conflict warning -->
+			<dependency>
+				<groupId>org.apache.maven.plugin-tools</groupId>
+				<artifactId>maven-plugin-annotations</artifactId>
+				<version>3.13.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
