@@ -286,16 +286,16 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>3.5.0</version>
+				<version>3.6.0</version>
 				<dependencies>
 					<dependency>
 						<groupId>com.puppycrawl.tools</groupId>
 						<artifactId>checkstyle</artifactId>
-						<version>10.18.2</version>
+						<version>10.26.1</version>
 					</dependency>
 				</dependencies>
 				<configuration>
-					<configLocation>checkstyle-no-star.xml</configLocation>
+					<configLocation>.checkstyle/checkstyle-no-star.xml</configLocation>
 					<includeTestSourceDirectory>true</includeTestSourceDirectory>
 					<violationSeverity>error</violationSeverity>
 					<failOnViolation>true</failOnViolation>
